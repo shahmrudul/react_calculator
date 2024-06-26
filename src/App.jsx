@@ -39,6 +39,10 @@ function App() {
     
     
     setDisplay(evaloutput)
+    settext('')
+    setEvaluation([evaloutput])
+
+    console.log(evaluation)
     }catch(e){
       if (e instanceof SyntaxError) {
         alert(e.message);
